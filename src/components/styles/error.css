@@ -1,0 +1,18 @@
+.Error_msg{
+    color: #FF6060;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Error_msg h1{
+    font-size: 200px;
+    margin: 0;
+}
+
+.Error_msg h2{
+    margin-bottom: 100px;
+}
+
+.Error_msg a {
+    color: #FF6060;
+}

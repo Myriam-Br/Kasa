@@ -1,0 +1,52 @@
+.container_drop_down {
+    background-color: #F7F7F7;
+    border-radius: 7px;
+}
+
+.container_drop_down h3{
+    background-color: #FF6060;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    font-weight: 400;
+    color: white;
+}
+
+.container_drop_down h3 span {
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+    cursor: pointer;
+}
+
+.container_drop_down p {
+    color: #FF6060;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.container_drop_down ul {
+    color: #FF6060;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.containers{
+    display: flex;
+}
+
+.description{
+   width: 50%;
+   margin-right: 50px;
+}
+.equipement{
+   width: 50%;
+}
