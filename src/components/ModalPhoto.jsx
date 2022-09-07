@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import iconNext from "../components/styles/images/vectornext.png"
 import iconPrevious from "../components/styles/images/vectorprev.png"
 import "./styles/logement.css"
@@ -6,8 +6,18 @@ import "./styles/logement.css"
 function ModalPhoto ({props}) {
     const imagesData = props
     const [current, setCurrent] = useState(0)
+    const[showArrows, setShowArrows ] = useState(true)
     const length = imagesData.length
 
+    useEffect(() => {
+        if(length === 1) {
+            setShowArrows(false)
+        } 
+    })
+
+    if(length <= 0) {
+        return null
+    }
     function nextSlide() {
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
@@ -15,11 +25,8 @@ function ModalPhoto ({props}) {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
-    if(imagesData.length <= 0) {
-        return null
-    }
+   
 
-    
     return(
     <div className="modal image_logement">   
         {imagesData.map((slide, index) => {
@@ -33,8 +40,8 @@ function ModalPhoto ({props}) {
             )  
         })}
 
-        <img src={iconNext} alt="next slide" onClick={nextSlide} className="next"/>
-        <img src={iconPrevious} alt="previous slide" onClick={previousSlide}  className="previous"/>
+        <img src={iconNext} style={{display : showArrows ? 'block' : 'none'}} alt="next slide" onClick={nextSlide} className="next"/>
+        <img src={iconPrevious} style={{display : showArrows ? 'block' : 'none'}} alt="previous slide" onClick={previousSlide}  className="previous"/>
     </div>)
 
 }

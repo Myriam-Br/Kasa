@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/styles/logement.css"
 import Rating from "./Rating";
+import Tags from '../components/Tags'
 
 function LogementById({props}) {
 
@@ -8,10 +9,13 @@ function LogementById({props}) {
         <div className="title_location">
             <h2>{props.title}</h2>
             <p>{props.location}</p>
+            <Tags props ={props.tags}/>
         </div>
         <div className="profil_host">
-            <p>{props.host.name}</p>
-            <img src = {props.host.picture} alt={props.host.name}></img>
+            <p>
+                {props.host.name}
+                <img src = {props.host.picture} alt={props.host.name}/>         
+            </p>
             <Rating props={props.rating}/>
         </div>
     </div> 

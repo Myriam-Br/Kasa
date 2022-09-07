@@ -30,7 +30,7 @@ function Info() {
     return <div className="Info">
             <img src = {image} alt='mountains'></img>
             {infos.map((info) => {
-                return <ContainerDropDown key={info[0]}  props = {info}/>
+                return <ContainerDropDown key={info[0]}  title = {info[0]} section={info[1]}/>
             })}
     </div>;
 }

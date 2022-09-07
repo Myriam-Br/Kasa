@@ -9,6 +9,7 @@ import LogementSelect from './pages/Logement'
 import Error from './pages/Erreur'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+//path ="*" permet de gérer l'erreur no routes found
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +20,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Info />} />
         <Route path="/logement/:userId" element={<LogementSelect/>} />
-        <Route path="/error" element={<Error/>} />
+        <Route path="*" element={<Error/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>,   
