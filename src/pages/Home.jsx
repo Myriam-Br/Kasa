@@ -1,13 +1,13 @@
-import '../App.css';
+import '../components/styles/home.css';
 import data from '../data.json'
-import Galerie from '../components/Galerie'
+import Cards from '../components/LogementCards'
 import ImageContainer from '../components/ImageContainer';
 
 function Home() {
   return (
-    <div className="App">
+    <div className="Home">
       <ImageContainer />
-      <Galerie props = {data}/>
+      <Cards props = {data}/>
     </div>
   );
 }

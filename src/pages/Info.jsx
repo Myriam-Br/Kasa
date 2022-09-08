@@ -1,8 +1,8 @@
 import React from "react";
 import "../components/styles/containerDropDown.css"
 import "../components/styles/info.css"
-import ContainerDropDown from "../components/ContainerDropDown";
-import image from "../components/styles/images/aproposBackground.png"
+import Collapse from "../components/Collapse";
+import image from "../components/images/aproposBackground.png"
 
 function Info() {
     const fiabilité = [
@@ -30,7 +30,7 @@ function Info() {
     return <div className="Info">
             <img src = {image} alt='mountains'></img>
             {infos.map((info) => {
-                return <ContainerDropDown key={info[0]}  title = {info[0]} section={info[1]}/>
+                return <Collapse key={info[0]}  title = {info[0]} section={info[1]}/>
             })}
     </div>;
 }

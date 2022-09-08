@@ -1,8 +1,16 @@
 .Info{
     margin: 30px 10% 30px 10%;
+    padding-bottom: 100px;
 }
 
 .Info img {
     width: 100%;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 390px) {
+    .Info{
+        margin: 30px 5% 30px 5%;
+  
+    }
 }

@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import vectorUp from "../components/styles/images/vectorup.png"
-import vectorDown from "../components/styles/images/vectordown.png"
+import vectorUp from "../components/images/vectorup.png"
+import vectorDown from "../components/images/vectordown.png"
 
-function ContainerDropDown({title, section}) {
+function Collapse({title, section}) {
 
     if(typeof section === 'string') {
         console.log('make a tab');
@@ -29,4 +29,4 @@ function ContainerDropDown({title, section}) {
     );
 }
 
-export default ContainerDropDown
+export default Collapse

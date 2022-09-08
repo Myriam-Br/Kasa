@@ -1,6 +1,8 @@
 .Logement{
     margin: 30px 10% 30px 10%;
+    padding-bottom: 150px;
 }
+
 .Logement .section_logement {
     color: #FF6060;
     height: fit-content;
@@ -90,4 +92,57 @@
 .rating img{
     width: 30px;
     object-fit: contain;
+}
+
+@media screen and (max-width: 390px) {
+ 
+    .Logement{
+        margin: 30px 5% 30px 5%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profil_host p {
+        margin-right: -30px;
+    }
+
+    .profil_host p img  {
+        height: 60px;
+        width: 60px;
+        margin-bottom: 20px;
+        margin-left: -70px
+    }
+    .rating {
+       margin-top: -30px;
+    }
+
+    .rating img{
+        width: 20px;
+        object-fit: contain;
+ 
+    }
+
+    .tags_container {
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        width: fit-content;
+        padding: 4px 1px 5px 1px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+    .image_logement .previous{
+        width: 25px;
+    }
+    .image_logement .next{
+        width: 25px;
+    }
+ 
 }

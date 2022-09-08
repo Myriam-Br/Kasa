@@ -19,3 +19,15 @@ header .links a {
 header .links a:hover{
     border-bottom: 2px #FF6060 solid;
 }
+
+@media screen and (max-width: 390px) {
+
+    header img{
+      width: 70px;
+      object-fit: contain;
+    }
+    header .links a{
+      font-size: 13px;
+  
+    }
+  }

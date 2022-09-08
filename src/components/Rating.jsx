@@ -1,6 +1,6 @@
 import React from "react";
-import etoileVide from "../components/styles/images/etoilevide.png"
-import etoileOrange from "../components/styles/images/etoilefull.png"
+import etoileVide from "../components/images/etoilevide.png"
+import etoileOrange from "../components/images/etoilefull.png"
 
 function Rating({props}) {
     const rating = JSON.parse(props)

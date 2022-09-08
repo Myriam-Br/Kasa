@@ -31,3 +31,25 @@ a li p {
     margin-left: 10px;
     color: white;
 }
+
+@media screen and (max-width: 390px) {
+    .galerie_container{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    .galerie_container .logement_card {
+        width: 100%;
+        margin-right: 10px;
+        max-width: none;
+        height: 190px;
+        margin-bottom: 30px;
+    }
+
+    .galerie_container p {
+        font-size: 15px;
+    }
+    
+}
