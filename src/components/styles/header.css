@@ -25,6 +25,7 @@ header .links a:hover{
     header img{
       width: 70px;
       object-fit: contain;
+      margin-top: 10px;
     }
     header .links a{
       font-size: 13px;
