@@ -11,10 +11,6 @@
     height: fit-content;
 }
 
-.Logement .section_logement .profil_host {
-    display: flex;
-    flex-direction: column;
-}
 
 .image_logement {
     position: relative;
@@ -46,9 +42,10 @@
 }
 
 .tags_container {
-    width: fit-content;
+    width: 100%;
     display: flex;
     margin-top: 0;
+    flex-wrap: wrap;
 }
 .tag{
     background-color: #FF6060;
@@ -66,17 +63,28 @@
 
 .section_logement {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
+.profil_host {
+    position: absolute;
+    right: 0;
+    width:200px;
+}
 .profil_host p{
-
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
 }
 
-.profil_host img{
+.profil_host .host_pic{
     border-radius: 50px;
     height: 80px;
     width: 80px;
+    position: absolute;
+    right: 0;
 }
 
 .profil_host span {
@@ -87,10 +95,13 @@
 .rating{
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 250px;
+    position: absolute;
+    bottom: 0;
 }
 
 .rating img{
-    width: 30px;
+    width: 25px;
     object-fit: contain;
 }
 
@@ -98,6 +109,7 @@
  
     .Logement{
         margin: 30px 5% 30px 5%;
+        position: relative;
     }
 
     .container {
@@ -105,34 +117,19 @@
         flex-direction: column;
     }
 
-    .profil_host p {
-        margin-right: -30px;
-    }
-
-    .profil_host p img  {
-        height: 60px;
-        width: 60px;
-        margin-bottom: 20px;
-        margin-left: -70px
-    }
-    .rating {
-       margin-top: -30px;
-    }
-
     .rating img{
-        width: 20px;
+        width: 22px;
         object-fit: contain;
  
     }
 
     .tags_container {
-        padding-top: 30px;
         flex-wrap: wrap;
     }
 
     .tag {
         width: fit-content;
-        padding: 4px 1px 5px 1px;
+        padding: 4px 15px 5px 15px;
     }
 
     h2{
@@ -144,5 +141,39 @@
     .image_logement .next{
         width: 25px;
     }
- 
+
+    .section_logement {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .title_location {
+        margin-bottom: 30px;
+    }
+
+    .profil_host {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+        margin-bottom: -10px;
+    }
+
+    .profil_host p {
+        width: 50px;
+        font-size: 18px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 230px;
+    }
+
+    .profil_host .host_pic{
+        width: 50px;
+        height: 50px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
 }

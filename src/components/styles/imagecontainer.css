@@ -34,7 +34,11 @@
     }
 
     .image_container p{
+        display: flex;
         font-size: 20px;
+        text-align: left;
+        margin-left: 10px;
+        flex-wrap: wrap;
     }
    
 }

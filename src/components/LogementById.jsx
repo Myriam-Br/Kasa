@@ -12,12 +12,10 @@ function LogementById({props}) {
             <Tags props ={props.tags}/>
         </div>
         <div className="profil_host">
-            <p>
-                {props.host.name}
-                <img src = {props.host.picture} alt={props.host.name}/>         
-            </p>
-            <Rating props={props.rating}/>
+            <p> {props.host.name}</p>
+            <img className="host_pic" src = {props.host.picture} alt={props.host.name}/>    
         </div>
+        <Rating props={props.rating}/>
     </div> 
 }
 
