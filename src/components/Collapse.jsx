@@ -5,7 +5,6 @@ import vectorDown from "../components/images/vectordown.png"
 function Collapse({title, section}) {
 
     if(typeof section === 'string') {
-        console.log('make a tab');
         section = [section]
     }
     

@@ -11,18 +11,18 @@ import { Navigate } from 'react-router-dom';
 //get by id
 function Logement() {
     const params = useParams()
-    const userId = data.filter(data =>  data.id === params.userId)
-
-    if(userId[0] === undefined) {
+    const logementById = data.find(data =>  data.id === params.logementId)
+    
+    if(logementById === undefined) {
         return <Navigate replace to="/error" />
     }
 
-    return <div key = {userId[0].id} className='Logement'>
-        <Galerie props = {userId[0].pictures}/>
-        <LogementById props = {userId[0]}/>
+    return <div key = {logementById.id} className='Logement'>
+        <Galerie props = {logementById.pictures}/>
+        <LogementById props = {logementById}/>
         <div className='container'>
-            <div className='description'><Collapse section={userId[0].description} id ={userId[0].id} title = "Description"/></div>
-            <div className='equipements'><Collapse section={userId[0].equipments} id ={userId[0].id} title = "Equipement"/></div>  
+            <div className='description'><Collapse section={logementById.description} id ={logementById.id} title = "Description"/></div>
+            <div className='equipements'><Collapse section={logementById.equipments} id ={logementById.id} title = "Equipement"/></div>  
         </div>
         
     </div>

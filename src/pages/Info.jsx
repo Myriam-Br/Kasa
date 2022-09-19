@@ -3,6 +3,7 @@ import "../components/styles/containerDropDown.css"
 import "../components/styles/info.css"
 import Collapse from "../components/Collapse";
 import image from "../components/images/aproposBackground.png"
+import BackgroundImage from "../components/BackGroundImage";
 
 function Info() {
     const fiabilité = [
@@ -28,7 +29,7 @@ function Info() {
     const infos = [ fiabilité , respect, service, security]
 
     return <div className="Info">
-            <img src = {image} alt='mountains'></img>
+            <BackgroundImage source={image} alt ='mountains'/>
             {infos.map((info) => {
                 return <Collapse key={info[0]}  title = {info[0]} section={info[1]}/>
             })}

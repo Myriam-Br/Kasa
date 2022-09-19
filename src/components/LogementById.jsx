@@ -15,7 +15,7 @@ function LogementById({props}) {
             <p> {props.host.name}</p>
             <img className="host_pic" src = {props.host.picture} alt={props.host.name}/>    
         </div>
-        <Rating props={props.rating}/>
+        <Rating props={parseInt(props.rating)}/>
     </div> 
 }
 
